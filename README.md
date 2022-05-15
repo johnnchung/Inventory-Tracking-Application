@@ -4,7 +4,7 @@ Shopify Fall 2022 Back-End Challenge. Guidelines for the assessment can be found
 All features for the challenge mentioned in the rubric above have been implemented, which includes basic CRUD functionality of creating inventory items, viewing them, editing them, and deleting them.
 
 ## Demo
-A demo can be found on Replit by clicking the link [here](https://replit.com/@JohnChung4/Shopify-Back-End-Challenge).
+A demo can be found on Replit by clicking the link [here](https://replit.com/@JohnChung4/Inventory-Tracking-Application#.replit).
 
 ## Installation and Local Setup
 1. Download [Node](https://nodejs.org/en/download/)
