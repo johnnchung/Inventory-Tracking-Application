@@ -5,7 +5,7 @@ const app = express();
 const MongoClient = require('mongodb').MongoClient
 
 app.use(express.static('public'))
-app.use(express.static('views'))
+app.use(express.static('src'))
 app.set('view engine', 'ejs')
 
 MongoClient.connect('mongodb+srv://johnchung19:Rotmgnpemc11!@cluster0.dsp69.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { useUnifiedTopology: true})
@@ -123,7 +123,7 @@ MongoClient.connect('mongodb+srv://johnchung19:Rotmgnpemc11!@cluster0.dsp69.mong
     })
 
     /**
-     * PATCH request to update whether comments within deleted inventory items
+     * PATCH request to update comments within deleted inventory items
      */
     app.patch('/inventoryCollection/comment', (req, res) => {
         isOpen[req.body.i] = true;
