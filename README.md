@@ -16,6 +16,6 @@ A demo can be found on Replit here.
 
 ## Installation and Local Setup
 1. Download Node
-2. npm install
-3. npm start
+2. ```npm install```
+3. ```npm start```
 4. Enjoy!
