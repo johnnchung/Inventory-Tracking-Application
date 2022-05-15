@@ -12,7 +12,7 @@ The first option for the additional features was implemented, which is to allow 
 - Unit Testing: Jest
 
 ## Demo
-A demo can be found on Replit here.
+A demo can be found on Replit by clicking the link [here](https://replit.com/@JohnChung4/Shopify-Back-End-Challenge).
 
 ## Installation and Local Setup
 1. Download Node
