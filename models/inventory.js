@@ -4,7 +4,9 @@ const InventorySchema = mongoose.Schema({
     name: String,
     items: String,
     deleted: Boolean,
-    deleteComments: String
+    deleteComments: String,
+    itemBool: Boolean,
+    isOpen: Boolean,
 });
 
 module.exports = mongoose.model('Inventory', InventorySchema);

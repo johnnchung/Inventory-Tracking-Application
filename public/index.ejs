@@ -8,7 +8,7 @@
 <body>
   <div class="form-header">
   <h1> Inventory Tracking Application</h1>
-    <form action="/inventoryCollection" method="POST">
+    <form action="/inventoryCollection/create" method="POST">
       <input type="text" placeholder="Item" name="name">
       <input type="text" placeholder="Description" name="items">
       <button type="submit">Submit</button>
@@ -18,7 +18,7 @@
 <ol class="items">
     <% for(var i = 0; i < inventoryCollection.length; i++) { %>
       <li id="changeName">
-        <% if(bools[i] == false && inventoryCollection[i].deleted == false) { %>
+        <% if(inventoryCollection[i].itemBool == false && inventoryCollection[i].deleted == false) { %>
         <div class="element">
           <span class="item-name" style="display: inline;">
             <%= inventoryCollection[i].name %>
@@ -27,36 +27,36 @@
             <%= inventoryCollection[i].items %>
           </span>
         </div>
-        <% if(commentsOpen[i] == false) { %>
-          <button onclick="clickButton('<%= i%>')" style="display: inline" class="edit-button" id="edit-button" value=<%=inventoryCollection[i]._id%>> Edit
+        <% if(inventoryCollection[i].isOpen == false) { %>
+          <button onclick="editButton('<%= inventoryCollection[i]._id%>')" style="display: inline" class="edit-button" id="edit-button" value=<%=inventoryCollection[i]._id%>> Edit
           </button>
         <% } %>
         <% } else if(inventoryCollection[i].deleted == false) { %>
-          <form action="/inventoryCollection/submitUpdate/<%= i %>/" method="POST">
+          <form action="/inventoryCollection/submitUpdate/<%= inventoryCollection[i]._id%>" method="POST">
             <input type="text" placeholder="<%= inventoryCollection[i].name %>" name="name">
             <input type="text" placeholder="<%= inventoryCollection[i].items %>" name="items">
-            <button class = "update-button" type="submit">Update</button>
+            <button class = "update-button" type="submit" value=<%=inventoryCollection[i]._id%>>Update</button>
         </form>
         <% } %>
-        <% if(bools[i] == false && inventoryCollection[i].deleted == false) { %>
-          <% if(commentsOpen[i] == false) { %>
-            <button onclick="openCButton('<%= i%>')" style = "display: inline" class="delete-button" id="delete-button"
+        <% if(inventoryCollection[i].itemBool == false && inventoryCollection[i].deleted == false) { %>
+          <% if(inventoryCollection[i].isOpen == false) { %>
+            <button onclick="openCButton('<%= inventoryCollection[i]._id%>')" style = "display: inline" class="delete-button" id="delete-button"
             value=<%=inventoryCollection[i]._id%>>Delete</button>
           <% } %>
-          <% if(commentsOpen[i] == true) { %>
-            <button onclick="cancelButton('<%= i%>')" style = "display: inline" class="cancel-button" id="cancel-button"
+          <% if(inventoryCollection[i].isOpen == true) { %>
+            <button onclick="cancelButton('<%= inventoryCollection[i]._id%>')" style = "display: inline" class="cancel-button" id="cancel-button"
               value=<%=inventoryCollection[i]._id%>>Cancel</button>
-            <form action="/inventoryCollection/deleteUpdate/<%= i %>/<%= inventoryCollection[i]._id%>/" method="POST"> 
+            <form action="/inventoryCollection/deleteUpdate/<%= inventoryCollection[i]._id%>/" method="POST"> 
               <input id="commentsBox" type="text" placeholder="Reason for deletion" name='comments'>
               <button type="submit">Submit</button>
            </form>
           <% } %>
         <% } else if(inventoryCollection[i].deleted == false) { %>
-          <button onclick="cancelButton('<%= i%>')" style = "display: inline" class="cancel-button" id="cancel-button"
+          <button onclick="cancelButton('<%= inventoryCollection[i]._id%>')" style = "display: inline" class="cancel-button" id="cancel-button"
             value=<%=inventoryCollection[i]._id%>>Cancel</button>
         <% } else { %>
             <p>Successfully deleted <%= inventoryCollection[i].name%>. Reason for deletion: <%= inventoryCollection[i].deleteComments%></p>
-            <button onclick="undoButton(this)" style = "display: inline" class="undo-button" id="undo-button"
+            <button onclick="undoButton('<%= inventoryCollection[i]._id%>')" style = "display: inline" class="undo-button" id="undo-button"
               value=<%=inventoryCollection[i]._id%>>Undo</button>
           <% } %>
         </li>

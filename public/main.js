@@ -1,14 +1,12 @@
 /**
  * Edit the object if the button is clicked
- * @param {Integer} index - Represents the inventory item's position 
+ * @param {Integer} index - Represents the inventory item's id
  */
-function clickButton(index) {
-    fetch('/inventoryCollection/edit', {
+function editButton(id) {
+    const encodedId = encodeURIComponent(id);
+    fetch(`/inventoryCollection/edit/${encodedId}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        i: index
-      })
     }).then(res => {
         return res
     }).then(data => {
@@ -18,15 +16,13 @@ function clickButton(index) {
 
 /**
  * Undo the deletion of an object if the button is clicked
- * @param {string} button - Represents the properties of the button
+ * @param {string} id - Represents the id of the button
  */
- function undoButton(button) {
-  fetch('/inventoryCollection/undo', {
+ function undoButton(id) {
+  const encodedId = encodeURIComponent(id);
+  fetch(`/inventoryCollection/undo/${encodedId}`, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      id: button.value
-    })
   }).then(res => {
     if(res.ok) {
         return res
@@ -38,15 +34,13 @@ function clickButton(index) {
 
 /**
  * Open comment section and allow user to enter deletion 
- * @param {Integer} index - Represents the item's position 
+ * @param {Integer} id - Represents the item's position 
  */
- function openCButton(index) {
-  fetch('/inventoryCollection/comment', {
+ function openCButton(id) {
+  const encodedId = encodeURIComponent(id);
+  fetch(`/inventoryCollection/comment/${encodedId}`, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      i: index
-    })
   }).then(res => {
     if(res.ok) {
         return res
@@ -58,15 +52,13 @@ function clickButton(index) {
 
 /**
  * Cancel the object if the button is clicked
- * @param {Integer} index - Represents the inventory item's position 
+ * @param {Integer} id - Represents the inventory item's id
  */
- function cancelButton(index) {
-  fetch('/inventoryCollection/cancel', {
+ function cancelButton(id) {
+  const encodedId = encodeURIComponent(id);
+  fetch(`/inventoryCollection/cancel/${encodedId}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      i: index
-    })
   }).then(res => {
       return res
   }).then(data => {
