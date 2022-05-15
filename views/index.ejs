@@ -39,7 +39,7 @@
         <% if(inventoryCollection[i].deleted == false) { %>
           <button onclick="openCButton('<%= i%>')" style = "display: inline" class="delete-button" id="delete-button"
           value=<%=inventoryCollection[i]._id%>>Delete</button>
-          <% if(modalOpen[i]) { %>
+          <% if(commentsOpen[i]) { %>
             <form action="/inventoryCollection/deleteUpdate/<%= i %>/<%= inventoryCollection[i]._id%>/" method="POST"> 
               <input id="commentsBox" type="text" placeholder="Reason for deletion" name='comments'>
               <button type="submit">Submit</button>
