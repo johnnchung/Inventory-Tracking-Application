@@ -55,3 +55,21 @@ function clickButton(index) {
       window.location.reload()
   })
 }
+
+/**
+ * Cancel the object if the button is clicked
+ * @param {Integer} index - Represents the inventory item's position 
+ */
+ function cancelButton(index) {
+  fetch('/inventoryCollection/cancel', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      i: index
+    })
+  }).then(res => {
+      return res
+  }).then(data => {
+    window.location.reload()
+})
+}

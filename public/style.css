@@ -25,6 +25,14 @@ ol.items {
     margin-right: 10px;
 }
 
+.cancel-button {
+    margin-right: 10px;
+}
+
+.undo-button {
+    margin-left: 10px;
+}
+
 .element {
     margin-right: 20px;
 }
