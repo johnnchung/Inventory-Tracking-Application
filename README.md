@@ -6,7 +6,7 @@ All features for the challenge mentioned in the rubric above have been implement
 The first option for the additional features was implemented, which is to allow flexibility in the deletion of items. This includes allowing deletion comments, and the option for users to undelete comments.
 
 ### Languages and Technologies Used
-- Back-end: Node.js, Express.js
+- Back-end: Node.js, Express.js, REST
 - Database & Libraries: MongoDB, Mongoose
 - Front-end: Javascript, HTML (EJS), CSS
 - Unit Testing: Jest.js
