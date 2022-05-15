@@ -15,7 +15,7 @@ The first option for the additional features was implemented, which is to allow 
 A demo can be found on Replit by clicking the link [here](https://replit.com/@JohnChung4/Shopify-Back-End-Challenge).
 
 ## Installation and Local Setup
-1. Download Node (https://nodejs.org/en/download/)
+1. Download [Node](https://nodejs.org/en/download/)
 2. ```npm install```
 3. ```npm start```
 4. Enjoy!
