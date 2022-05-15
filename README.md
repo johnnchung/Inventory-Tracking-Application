@@ -7,6 +7,7 @@ The first option for the additional features was implemented, which is to allow 
 
 ### Languages and Technologies Used
 - Back-end: Node.js, Express.js
+- Libraries: Mongoose
 - Database: MongoDB
 - Front-end: Javascript, HTML (EJS), CSS
 - Unit Testing: Jest.js
