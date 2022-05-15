@@ -9,7 +9,7 @@ The first option for the additional features was implemented, which is to allow 
 - Back-end: Node.js, Express.js
 - Database: MongoDB
 - Front-end: Javascript, HTML (EJS), CSS
-- Unit Testing: Jest
+- Unit Testing: Jest.js
 
 ## Demo
 A demo can be found on Replit by clicking the link [here](https://replit.com/@JohnChung4/Shopify-Back-End-Challenge).
