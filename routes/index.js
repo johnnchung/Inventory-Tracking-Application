@@ -3,8 +3,9 @@ const router = express.Router();
 const { ObjectId } = require('mongodb');
 const Inventory = require('../models/inventory')
 
-var itemBool;
-var isOpen;
+global.itemBool;
+global.isOpen;
+
 Inventory.find().then(result => {
     itemBool = new Array(result.length).fill(false)
 })
