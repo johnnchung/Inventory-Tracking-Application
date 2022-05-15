@@ -1,3 +1,12 @@
+## Demo
+A demo can be found on Replit by clicking the link [here](https://replit.com/@JohnChung4/Shopify-Back-End-Challenge).
+
+## Installation and Local Setup
+1. Download [Node](https://nodejs.org/en/download/)
+2. ```npm install```
+3. ```npm start```
+4. Open [localhost:3000](https://localhost:3000) to view the application!
+
 # Shopify-Fall-2022-Challenge
 Shopify Fall 2022 Back-End Challenge. Guidelines for the assessment can be found [here](https://docs.google.com/document/d/1PoxpoaJymXmFB3iCMhGL6js-ibht7GO_DkCF2elCySU/edit).
 
@@ -10,12 +19,3 @@ The first option for the additional features was implemented, which is to allow 
 - Database & Libraries: MongoDB, Mongoose
 - Front-end: Javascript, HTML (EJS), CSS
 - Unit Testing: Jest.js
-
-## Demo
-A demo can be found on Replit by clicking the link [here](https://replit.com/@JohnChung4/Shopify-Back-End-Challenge).
-
-## Installation and Local Setup
-1. Download [Node](https://nodejs.org/en/download/)
-2. ```npm install```
-3. ```npm start```
-4. Open [localhost:3000](https://localhost:3000) to view the application!
