@@ -18,4 +18,4 @@ A demo can be found on Replit by clicking the link [here](https://replit.com/@Jo
 1. Download [Node](https://nodejs.org/en/download/)
 2. ```npm install```
 3. ```npm start```
-4. Enjoy!
+4. Open [localhost:3000](localhost:3000) to view the application!
