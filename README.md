@@ -10,7 +10,6 @@ A demo can be found on Replit by clicking the link [here](https://replit.com/@Jo
 1. Download [Node](https://nodejs.org/en/download/)
 2. ```npm install```
 3. ```npm start```
-4. Open [localhost:3000](https://localhost:3000) to view the application!
 
 ## Additional Feature
 The first option for the additional features was implemented, which is to allow flexibility in the deletion of items. This includes allowing deletion comments, and the option for users to undelete comments.
