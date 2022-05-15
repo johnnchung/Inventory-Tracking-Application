@@ -1,5 +1,5 @@
 # Shopify-Fall2022-Challenge
-Shopify Fall 2022 Back-End Challenge by John Chung. Guideline for assessment [here](https://docs.google.com/document/d/1PoxpoaJymXmFB3iCMhGL6js-ibht7GO_DkCF2elCySU/edit).
+Shopify Fall 2022 Back-End Challenge. Guideline for assessment [here](https://docs.google.com/document/d/1PoxpoaJymXmFB3iCMhGL6js-ibht7GO_DkCF2elCySU/edit).
 
 All features for the challenge mentioned in the rubric above have been implemented, which includes basic CRUD functionality of creating inventory items, viewing them, editing them, and deleting them.
 ## Additional Feature
