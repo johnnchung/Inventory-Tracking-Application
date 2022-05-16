@@ -9,15 +9,13 @@ The first option for the additional features was implemented, which is to allow 
 ## Demo
 A demo can be found on Replit by clicking the link [here](https://replit.com/@JohnChung4/Inventory-Tracking-Application#.replit).
 
-## Installation, Local Setup, and Running Tests
+## Installation and Local Setup
 1. Download [Node](https://nodejs.org/en/download/)
 2. ```npm install```
-3. ```npm start```
-4. Run tests using ```npm test```
+3. ```npm start``
 
 ### Languages, Technologies, and Design Patterns
 - Back-end: Node.js, Express.js, REST
 - Database & Libraries: MongoDB, Mongoose
 - Front-end: Javascript, HTML (EJS), CSS
-- Unit Testing: Jest.js
 - MVC architecture
