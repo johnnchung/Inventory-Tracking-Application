@@ -12,7 +12,7 @@ A demo can be found on Replit by clicking the link [here](https://replit.com/@Jo
 ## Installation and Local Setup
 1. Download [Node](https://nodejs.org/en/download/)
 2. ```npm install```
-3. ```npm start``
+3. ```npm start```
 
 ### Languages, Technologies, and Design Patterns
 - Back-end: Node.js, Express.js, REST
