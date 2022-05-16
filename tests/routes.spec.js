@@ -17,12 +17,13 @@ const mockInventory = {
 beforeAll(async () => await db.connect());
 afterEach(async () => await db.clear());
 afterAll(async () => await db.close());
-// describe("GET / ", () => {
-//   test("It should return 200 status code for / API endpoint", async () => {
-//     const response = await agent.get("/");
-//     expect(response.statusCode).toEqual(200);
-//   });
-// });
+
+describe("GET / ", () => {
+  test("It should return 200 status code for / API endpoint", async () => {
+    const response = await agent.get("/");
+    expect(response.statusCode).toEqual(200);
+  });
+});
 
 /**
  * Routes that redirect to / should expect to return 302 status code
@@ -61,17 +62,17 @@ describe("POST requests", () => {
   });
 });
 
-// describe("PATCH request", () => {
-//   test("It should return 302 status code for undo API endpoint", async () => {
-//     const response = await agent
-//       .patch("/inventoryCollection/undo/" + ObjectId("628202a2fd11cf112cbecfc3"))
-//       .send(mockInventory);
-//       expect(response.statusCode).toEqual(200);
-//   });
-//   test("It should return 302 status code for comment API endpoint", async () => {
-//     const response = await agent
-//       .patch("/inventoryCollection/comment/" + ObjectId("628203207c91747efce5fa5b"))
-//       .send(mockInventory);
-//       expect(response.statusCode).toEqual(302);
-//   });
-// })
+describe("PATCH request", () => {
+  test("It should return 302 status code for undo API endpoint", async () => {
+    const response = await agent
+      .patch("/inventoryCollection/undo/" + ObjectId("628202a2fd11cf112cbecfc3"))
+      .send(mockInventory);
+      expect(response.statusCode).toEqual(200);
+  });
+  test("It should return 302 status code for comment API endpoint", async () => {
+    const response = await agent
+      .patch("/inventoryCollection/comment/" + ObjectId("628203207c91747efce5fa5b"))
+      .send(mockInventory);
+      expect(response.statusCode).toEqual(302);
+  });
+})
