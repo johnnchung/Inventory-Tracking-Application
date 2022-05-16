@@ -6,10 +6,11 @@ All features for the challenge mentioned in the rubric above have been implement
 ## Demo
 A demo can be found on Replit by clicking the link [here](https://replit.com/@JohnChung4/Inventory-Tracking-Application#.replit).
 
-## Installation and Local Setup
+## Installation, Local Setup, and Running Tests
 1. Download [Node](https://nodejs.org/en/download/)
 2. ```npm install```
 3. ```npm start```
+4. Run tests using ```npm test```
 
 ## Additional Feature
 The first option for the additional features was implemented, which is to allow flexibility in the deletion of items. This includes allowing deletion comments, and the option for users to undelete comments.
