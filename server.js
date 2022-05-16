@@ -20,3 +20,5 @@ app.use('/inventoryCollection', require('./routes/inventoryCollection'));
 app.listen(3000, function() {
     console.log('Listening on Port 3000')
 })
+
+module.exports = app
