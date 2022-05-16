@@ -1,6 +1,10 @@
 const Inventory = require('../models/inventory')
 const { ObjectId } = require('mongodb');
 
+/**
+ * Creating a new item within our database
+ * @param {object} req 
+ */
 exports.createItem = (req, res) => {
     Inventory.create({
         name: req.body.name,
@@ -14,6 +18,10 @@ exports.createItem = (req, res) => {
     }).catch(error => console.error(error))
 }
 
+/**
+ * Updating the inventory item with incoming request
+ * @param {object} req
+ */
 exports.updateItem = (req, res) => {
     Inventory.updateOne(
         {_id: req.params.id},
@@ -29,6 +37,10 @@ exports.updateItem = (req, res) => {
     }).catch(error => console.error(error))
 }
 
+/**
+ * Option for editing existing item in our inventory
+ * @param {object} req
+ */
 exports.editItem = (req, res) => {
     const id = req.params.id;
     Inventory.updateOne(
@@ -45,6 +57,10 @@ exports.editItem = (req, res) => {
     }).catch(error => console.error(error))
 }
 
+/**
+ * Option for cancelling editing state
+ * @param {object} req 
+ */
 exports.cancelUpdate = (req, res) => {
     Inventory.updateOne(
         {_id: req.params.id},
@@ -59,6 +75,10 @@ exports.cancelUpdate = (req, res) => {
     }).catch(error => console.error(error))
 }
 
+/**
+ * Change delete state to true to hide inventory data (soft-delete)
+ * @param {object} req
+ */
 exports.deleteItem = (req, res) => {
     Inventory.updateOne({
         _id: ObjectId(req.params.id)
@@ -75,6 +95,10 @@ exports.deleteItem = (req, res) => {
     }).catch(error => console.error(error))
 }
 
+/**
+ * Allow undo of deleted item
+ * @param {object} req
+ */
 exports.undoDelete = (req, res) => {
     Inventory.updateOne({
         _id: ObjectId(req.params.id)
@@ -89,7 +113,10 @@ exports.undoDelete = (req, res) => {
     }).catch(error => console.error(error))
 }
 
-
+/**
+ * Allow reason for deletion through comment
+ * @param {object} req
+ */
 exports.commentOnDelete = (req, res) => {
     const id = req.params.id;
     Inventory.updateOne(
