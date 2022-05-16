@@ -3,19 +3,21 @@ Shopify Fall 2022 Back-End Challenge. Guidelines for the assessment can be found
 
 All features for the challenge mentioned in the rubric above have been implemented, which includes basic CRUD functionality of creating inventory items, viewing them, editing them, and deleting them.
 
-## Demo
-A demo can be found on Replit by clicking the link [here](https://replit.com/@JohnChung4/Shopify-Back-End-Challenge).
-
-## Installation and Local Setup
-1. Download [Node](https://nodejs.org/en/download/)
-2. ```npm install```
-3. ```npm start```
-
 ## Additional Feature
 The first option for the additional features was implemented, which is to allow flexibility in the deletion of items. This includes allowing deletion comments, and the option for users to undelete comments.
 
-### Languages and Technologies Used
+## Demo
+A demo can be found on Replit by clicking the link [here](https://replit.com/@JohnChung4/Inventory-Tracking-Application#.replit).
+
+## Installation, Local Setup, and Running Tests
+1. Download [Node](https://nodejs.org/en/download/)
+2. ```npm install```
+3. ```npm start```
+4. Run tests using ```npm test```
+
+### Languages, Technologies, and Design Patterns
 - Back-end: Node.js, Express.js, REST
 - Database & Libraries: MongoDB, Mongoose
 - Front-end: Javascript, HTML (EJS), CSS
 - Unit Testing: Jest.js
+- MVC architecture
