@@ -15,8 +15,9 @@ A demo can be found on Replit by clicking the link [here](https://replit.com/@Jo
 3. ```npm start```
 4. Run tests using ```npm test```
 
-### Languages and Technologies Used
+### Languages, Technologies, and Design Patterns
 - Back-end: Node.js, Express.js, REST
 - Database & Libraries: MongoDB, Mongoose
 - Front-end: Javascript, HTML (EJS), CSS
 - Unit Testing: Jest.js
+- MVC architecture
