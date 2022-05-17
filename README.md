@@ -21,3 +21,29 @@ A demo can be found on Replit by clicking the link [here](https://replit.com/@Jo
 - Front-end: Javascript, HTML (EJS), CSS
 - MVC architecture
 - Unit Testing: Jest.js
+
+##API Documentation and Design
+
+#GET /inventoryCollection
+Used to retrieve home page of application.
+
+#POST /inventoryCollection/create
+Used to create a new inventory item.
+
+#POST /inventoryCollection/edit/:id
+Used to enter edit state of an inventory item. Requires ```id``` in the params.
+
+#POST /inventoryCollection/submitUpdate/:id
+Used to submit the changes of the inventory item in edit state. Requires ```id``` in the params.
+
+#POST /inventoryCollection/cancel/:id
+Used to cancel being in the edit state. Requires ```id``` in the params.
+
+#POST /inventoryCollection/deleteUpdate/:id
+Used to delete an item from the view. Note: DELETE request was not used to account for soft deletion. Requires ```id``` in the params.
+
+#POST /inventoryCollection/undo/:id
+Used to undo the deletion of an item. Requires ```id``` in the params.
+
+#POST /inventoryCollection/comment/:id
+Used to allow comments before deleting an item. Requires ```id``` in the params.
