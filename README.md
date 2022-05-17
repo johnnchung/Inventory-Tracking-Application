@@ -24,7 +24,7 @@ A demo can be found on Replit by clicking the link [here](https://replit.com/@Jo
 
 ## API Documentation and Design
 
-# GET /inventoryCollection
+### GET /inventoryCollection
 Used to retrieve home page of application.
 
 ### POST /inventoryCollection/create
