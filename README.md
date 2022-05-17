@@ -40,7 +40,8 @@ Used to submit the changes of the inventory item in edit state. Requires ```id``
 Used to cancel being in the edit state. Requires ```id``` in the params.
 
 ### POST /inventoryCollection/deleteUpdate/:id
-Used to delete an item from the view. Note: DELETE request was not used to account for soft deletion. Requires ```id``` in the params.
+Used to delete an item from the view. Note: DELETE request was not used to account for soft deletion. 
+Requires ```id``` in the params.
 
 ### PATCH /inventoryCollection/undo/:id
 Used to undo the deletion of an item. Requires ```id``` in the params.
