@@ -63,7 +63,7 @@ describe("POST requests", () => {
 });
 
 describe("PATCH request", () => {
-  test("It should return 302 status code for undo API endpoint", async () => {
+  test("It should return 200 status code for undo API endpoint", async () => {
     const response = await agent
       .patch("/inventoryCollection/undo/" + ObjectId("628202a2fd11cf112cbecfc3"))
       .send(mockInventory);
