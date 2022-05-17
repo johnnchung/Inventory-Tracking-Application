@@ -9,7 +9,7 @@ The first option for the additional features was implemented, which is to allow 
 ## Demo
 A demo can be found on Replit by clicking the link [here](https://replit.com/@JohnChung4/Inventory-Tracking-Application#.replit).
 
-## Installation, Local Setup, and Running Endpoint Unit Tests
+## Installation, Local Setup, and Running Tests
 1. Download [Node](https://nodejs.org/en/download/)
 2. ```npm install```
 3. ```npm start```
