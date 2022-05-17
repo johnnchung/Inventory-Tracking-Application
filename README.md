@@ -19,8 +19,8 @@ A demo can be found on Replit by clicking the link [here](https://replit.com/@Jo
 - Back-end: Node.js, Express.js, REST
 - Database & Libraries: MongoDB, Mongoose
 - Front-end: Javascript, HTML (EJS), CSS
-- MVC architecture
 - Unit Testing: Jest.js
+- Design Patterns: MVC
 
 ## API Documentation and Design
 
